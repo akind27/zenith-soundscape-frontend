@@ -1,0 +1,16 @@
+{
+  "phases": {
+    "setup": {
+      "nixPkgs": ["nodejs", "python3", "gcc", "gnumake", "sqlite"]
+    },
+    "install": {
+      "cmds": ["npm ci --include=dev"]
+    },
+    "build": {
+      "cmds": ["npm rebuild sqlite3 --build-from-source"]
+    }
+  },
+  "start": {
+    "cmd": "node server.js"
+  }
+}
