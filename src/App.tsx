@@ -80,8 +80,8 @@ const App: React.FC = () => {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-600 to-blue-600">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-white mb-4">🎵 Zenith Soundscape</h1>
-          <p className="text-white/80 mb-8">Your ambient sound sanctuary</p>
+          <h1 className="text-4xl font-bold text-white mb-4">🎵 Natural Sound Mixer</h1>
+          <p className="text-white/80 mb-8">Mix natural sounds for focus and relaxation</p>
           <button
             onClick={handleInit}
             className="px-8 py-4 bg-white text-purple-600 rounded-full font-semibold text-lg hover:bg-purple-50 transition-colors shadow-lg"
@@ -107,8 +107,8 @@ const App: React.FC = () => {
                 <span className="text-2xl">🎵</span>
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-white">Zenith Soundscape</h1>
-                <p className="text-sm text-white/80">Your ambient sound sanctuary</p>
+                <h1 className="text-2xl font-bold text-white">Natural Sound Mixer</h1>
+                <p className="text-sm text-white/80">Mix natural sounds for focus and relaxation</p>
               </div>
             </div>
             
