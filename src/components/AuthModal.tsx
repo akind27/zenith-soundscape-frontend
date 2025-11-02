@@ -45,10 +45,10 @@ const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose }) => {
             No problem! Send an email to:
           </p>
           <a
-            href="mailto:support@naturalsoundmixer.com?subject=Password Reset Request"
+            href="mailto:gemini.krav@gmail.com?subject=Password Reset Request - Natural Sound Mixer"
             className="block w-full text-center py-3 bg-purple-500 hover:bg-purple-600 text-white rounded-lg font-semibold transition-colors mb-4"
           >
-            📧 support@naturalsoundmixer.com
+            📧 gemini.krav@gmail.com
           </a>
           <p className="text-sm text-gray-500 mb-6">
             Include your email address and we'll help you reset your password within 24 hours.
