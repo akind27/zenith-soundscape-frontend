@@ -39,28 +39,29 @@ const UserMenu: React.FC = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border border-gray-100 overflow-hidden z-50">
-          <div className="p-4 bg-gradient-to-br from-purple-50 to-blue-50 border-b border-gray-100">
-            <div className="font-semibold text-gray-800">{user.email}</div>
-            <div className="text-sm mt-1">
-              {user.is_premium ? (
-                <span className="text-purple-600 font-medium">★ Premium Member</span>
-              ) : (
-                <span className="text-gray-600">Free Account</span>
-              )}
+        <div className="absolute right-0 mt-2 w-72 bg-white rounded-xl shadow-2xl border border-gray-100 z-50">
+          <div className="p-4">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex-1">
+                <div className="font-semibold text-gray-800">{user.email}</div>
+                <div className="text-sm mt-1">
+                  {user.is_premium ? (
+                    <span className="text-purple-600 font-medium">★ Premium Member</span>
+                  ) : (
+                    <span className="text-gray-600">Free Account</span>
+                  )}
+                </div>
+              </div>
+              <button
+                onClick={() => {
+                  logout();
+                  setIsOpen(false);
+                }}
+                className="ml-3 px-4 py-2 bg-red-50 hover:bg-red-100 text-red-600 rounded-lg transition-colors font-medium text-sm"
+              >
+                Sign Out
+              </button>
             </div>
-          </div>
-
-          <div className="p-2">
-            <button
-              onClick={() => {
-                logout();
-                setIsOpen(false);
-              }}
-              className="w-full px-4 py-2 text-left text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
-            >
-              Sign Out
-            </button>
           </div>
         </div>
       )}
